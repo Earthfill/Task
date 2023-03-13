@@ -12,8 +12,7 @@ namespace api.Model
         public string Email { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
-
-        //Navigation properties
+        
         [JsonIgnore]
         public ICollection<BlogPost> BlogPosts { get; set; }
     }
